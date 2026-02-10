@@ -1,0 +1,50 @@
+site_name: AcmeCloud Documentation
+site_url: http://localhost:8000
+site_description: Technical documentation for AcmeCloud SaaS platform
+site_author: Acme Inc.
+
+theme:
+  name: material
+  logo: images/acmecloud-logo.png   # optional if you have a logo
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Concepts:
+      - AcmeCloud Overview: concepts/acmecloud_overview.md
+  - Product:
+      - Getting Started: product/getting_started.md
+  - Tasks:
+      - Create Project: tasks/create_project.md
+      - Manage Users: tasks/manage_users.md
+  - References:
+      - API Reference: references/api_references.md
+      - Release Notes: references/release_notes.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - tables
+  - attr_list
+
+plugins:
+  - search
+  - mkdocs_macros
+
+extra_css:
+  - styles/saas/custom.css   # optional custom styling
+
+extra_javascript:
+  - scripts/custom.js        # optional JS scripts
+
+repo_url: https://github.com/acme/acmecloud-docs
+repo_name: GitHub
+edit_uri: edit/main/docs/
