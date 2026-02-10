@@ -226,6 +226,4 @@ Refer to the AI Vale Workflow README for detailed instructions.
 
 ---
 
-## License
 
-Add your preferred license here.
